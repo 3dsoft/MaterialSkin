@@ -1,15 +1,12 @@
 MaterialSkin for .NET WinForms
 =====================
 
-Theming .NET WinForms, C# or VB.Net, to Google's Material Design Principles.
-
 <a href="https://www.youtube.com/watch?v=A8osVM_SXlg" target="_blank">![alt tag](http://i.imgur.com/JAttoOo.png)</a>
-
-*High quality images can be found at the bottom of this page.*
 
 ---
 
-#### Current state of the MaterialSkin components
+#### 현재까지 구현된 MaterialSkin components 목록
+
 Component | Supported | Dark & light version | Disabled mode | Animated
 --- | --- | --- | --- | ---
 Checkbox | Yes | Yes | Yes | Yes 
@@ -32,13 +29,16 @@ More... | No | No | No | No
 
 #### MaterialSkin 설치 방법
 
+
 **1. .Net 버전 설정
 
-MaterialSkin은 .Net 4.5부터 설치 가능하다.
+MaterialSkin은 .Net 4.5부터 설치 가능하니, 본인의 프로젝트 닷넷버전을 확인할것
+
 
 **2. Nuget에서 MaterialSkin 설치**
 
 Nuget에서 MaterialSkin을 검색하여  설치한다. 
+
 
 **3. [도구상자]에 MaterialSkin의 콤포넌트 설치하기**
 
@@ -47,6 +47,7 @@ Nuget에서 MaterialSkin을 검색하여  설치한다.
 [도구상자]를 열어놓은 상태에서 MaterialSkin.dll을 [도구상자]에 끌어다 놓으면 콤포넌트가 자동으로 추가된다. 
 
 가급적 [도구상자]에 MaterialSkin 관련 탭을 만든뒤에 추가하는걸 권장한다. 
+
 
 **4. 메인 폼에 MaterialForm 설정**
 
@@ -64,7 +65,8 @@ Form에 MaterialForm을 적용시키려고 한다면, 아래처럼 Form1을 Mate
   Partial Class Form1
     Inherits MaterialSkin.Controls.MaterialForm
   ```
-  
+
+
 **5. 컬러스키마 초기화하기**
 
 위 4번에서 MaterialForm을 적용했을경우,  컬러 테마를 추가로 설정할 수 있다. 
@@ -101,6 +103,7 @@ End Class
 
 ---
 
+
 #### Material Design in WPF
 
 If you love .NET and Material Design, you should definitely check out [Material Design Xaml Toolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) by ButchersBoy. It's a similar project but for WPF instead of WinForms.
@@ -108,11 +111,13 @@ If you love .NET and Material Design, you should definitely check out [Material 
 ---
 
 
+
 #### State of the project
 
 This project is no longer under active development. Though, contributions are still welcome and the community will likely still help if you open an issue.
 
 ---
+
 
 #### Contact
 
@@ -122,6 +127,7 @@ If you wish to contact me for anything you can get in touch at:
 - Personal Website: http://ignacemaes.com
 
 ---
+
 
 #### Images
 
