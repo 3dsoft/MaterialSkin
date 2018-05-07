@@ -30,22 +30,30 @@ More... | No | No | No | No
 
 ---
 
-#### Implementing MaterialSkin in your application
+#### MaterialSkin 설치 방법
 
-**1. Add the library to your project**
+**1. .Net 버전 설정
 
-  You can do this on multiple ways. The easiest way would be adding the [NuGet Package](https://www.nuget.org/packages/MaterialSkin/). Right click on your project and click 'Manage NuGet Packages...'. Search for 'MaterialSkin' and click on install. Once installed the library will be included in your project references. (Or install it through the package manager console: PM> Install-Package MaterialSkin)
+MaterialSkin은 .Net 4.5부터 설치 가능하다.
 
-Another way of doing this step would be cloning the project from GitHub, compiling the library yourself and adding it as a reference.
-  
-**2. Add the MaterialSkin components to your ToolBox**
+**2. Nuget에서 MaterialSkin 설치**
 
-  If you have installed the NuGet package, the MaterialSkin.dll file should be in the folder //bin/Debug. Simply drag the MaterialSkin.dll file into your IDE's ToolBox and all the controls should be added there.
-  
-**3. Inherit from MaterialForm**
+Nuget에서 MaterialSkin을 검색하여  설치한다. 
 
-  Open the code behind your Form you wish to skin. Make it inherit from MaterialForm rather than Form. Don't forget to put the library in your imports, so it can find the MaterialForm class!
-  
+**3. [도구상자]에 MaterialSkin의 콤포넌트 설치하기**
+
+위의 2번에서 MaterialSkin을 설치하고난  뒤에 그냥 빌드를 하면 /Bin/Debug 폴더에 MaterialSkin.dll이 만들어진다. 
+
+[도구상자]를 열어놓은 상태에서 MaterialSkin.dll을 [도구상자]에 끌어다 놓으면 콤포넌트가 자동으로 추가된다. 
+
+가급적 [도구상자]에 MaterialSkin 관련 탭을 만든뒤에 추가하는걸 권장한다. 
+
+**4. 메인 폼에 MaterialForm 설정**
+
+Form에 MaterialForm을 적용시키려고 한다면, 아래처럼 Form1을 MaterialForm으로부터 상속받도록 설정하면 된다. 
+
+(폼에 MaterialForm을 적용하지 않고 콤포넌트만 사용해도 무방하다)
+  
   C# (Form1.cs)
   ```cs
   public partial class Form1 : MaterialForm
@@ -57,9 +65,11 @@ Another way of doing this step would be cloning the project from GitHub, compili
     Inherits MaterialSkin.Controls.MaterialForm
   ```
   
-**4. Initialize your colorscheme**
+**5. 컬러스키마 초기화하기**
 
-  Set your preferred colors & theme. Also add the form to the manager so it keeps updated if the color scheme or theme changes later on.
+위 4번에서 MaterialForm을 적용했을경우,  컬러 테마를 추가로 설정할 수 있다. 
+
+(아래 코드에서 Theme 설정부분까지만 설정해도 충분함)
 
 C# (Form1.cs)
   ```cs
